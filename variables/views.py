@@ -1,8 +1,11 @@
-from .logic import variables_logic as vl
-from django.http import HttpResponse
-from django.core import serializers
 import json
+
+from django.core import serializers
+from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
+
+from .logic import variables_logic as vl
+
 
 @csrf_exempt
 def variables_view(request):
